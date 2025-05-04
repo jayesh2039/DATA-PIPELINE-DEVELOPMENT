@@ -51,20 +51,19 @@ python etl_pipeline.py <input_file.csv>
 Replace <input_file.csv> with the path to your CSV file. The script will process the file and save the transformed data as processed_output.csv.
 
 Example Input
-Example of a raw dataset:
+| Name    | Sex    | Age | Fare  | Embarked |
+| ------- | ------ | --- | ----- | -------- |
+| John    | male   | 22  | 7.25  | S        |
+| Sarah   | female | 28  | 71.28 | C        |
+| Michael | male   | NaN | 8.05  | Q        |
 
-Name	  Sex	    Age	  Fare	  Embarked
-John	  male	  22	  7.25	  S
-Sarah	  female	28	  71.28	  C
-Michael	male	  NaN	  8.05	  Q
 
 Example Output
-After processing the data, the output will be scaled and encoded:
-
-Name	   Sex	Age	    Fare	   Embarked
-0.447	   1	  -1.607	-0.831	 0.577
--0.447	-1	  1.053	  1.633	   -1.732
-1.342	   1	  0.000	  -0.801	 0.577
+| Name   | Sex | Age   | Fare  | Embarked |
+| ------ | --- | ----- | ----- | -------- |
+| 0.447  | 1   | -1.60 | -0.83 | 0.577    |
+| -0.447 | -1  | 1.05  | 1.63  | -1.732   |
+| 1.342  | 1   | 0.00  | -0.80 | 0.577    |
 
 Contributing
 Feel free to fork the repository, make improvements, and submit pull requests.
