@@ -1,30 +1,38 @@
 # ScikitLearn-ETL-Pipeline
-# 1. Data Preprocessing ETL Pipeline
+
+## 1. Data Preprocessing ETL Pipeline
 
 This repository contains a Python-based **ETL (Extract, Transform, Load)** pipeline for data preprocessing, transformation, and loading using **Pandas** and **Scikit-Learn**. The pipeline is designed to process CSV files and perform data cleaning, transformation, encoding, and scaling operations automatically.
+
+---
 
 ## Project Overview
 
 The project aims to automate the ETL process for structured datasets. It handles common preprocessing tasks like:
-- Loading CSV files
-- Handling missing data
-- Encoding categorical features
-- Scaling numeric features
+
+- Loading CSV files  
+- Handling missing data  
+- Encoding categorical features  
+- Scaling numeric features  
 - Saving the transformed data to a new CSV file
 
-### Key Features:
-- **Missing Data Handling**: Fills missing numeric values with the mean and categorical values with the mode.
-- **Categorical Encoding**: Encodes categorical features into numeric values using **Label Encoding**.
-- **Data Scaling**: Scales numeric columns using **StandardScaler** to standardize the data.
-- **Customizable Columns**: Users can define relevant columns for preprocessing.
+### 🔑 Key Features
 
-## How to Use
+- **Missing Data Handling**: Fills missing numeric values with the mean and categorical values with the mode.  
+- **Categorical Encoding**: Converts categorical columns into numbers using **LabelEncoder**.  
+- **Data Scaling**: Applies **StandardScaler** to normalize numeric columns.  
+- **Custom Columns**: You can define which columns to include in preprocessing.
 
-1. **Clone the repository:**
+---
 
-   ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+## 💻 How to Use
+
+### 1. Clone the repository:
+
+bash
+git clone https://github.com/yourusername/ScikitLearn-ETL-Pipeline.git
+cd ScikitLearn-ETL-Pipeline
+
 # 2. Install the required dependencies:
 
 Make sure you have Python 3.x installed and then install the necessary libraries:
@@ -50,7 +58,7 @@ Edit
 python etl_pipeline.py <input_file.csv>
 Replace <input_file.csv> with the path to your CSV file. The script will process the file and save the transformed data as processed_output.csv.
 
-Example Input
+📥 Example Input
 | Name    | Sex    | Age | Fare  | Embarked |
 | ------- | ------ | --- | ----- | -------- |
 | John    | male   | 22  | 7.25  | S        |
@@ -58,17 +66,17 @@ Example Input
 | Michael | male   | NaN | 8.05  | Q        |
 
 
-Example Output
+📥 Example Output
 | Name   | Sex | Age   | Fare  | Embarked |
 | ------ | --- | ----- | ----- | -------- |
 | 0.447  | 1   | -1.60 | -0.83 | 0.577    |
 | -0.447 | -1  | 1.05  | 1.63  | -1.732   |
 | 1.342  | 1   | 0.00  | -0.80 | 0.577    |
 
-Contributing
+🤝 Contributing
 Feel free to fork the repository, make improvements, and submit pull requests.
 
-Requirements
+🧰 Requirements
 - Python 3.x
 - Pandas
 - Scikit-learn
