@@ -30,7 +30,7 @@ The project aims to automate the ETL process for structured datasets. It handles
 ### 1. Clone the repository:
 
 bash
-git clone https://github.com/yourusername/ScikitLearn-ETL-Pipeline.git
+git clone https://github.com/jayesh2039/ScikitLearn-ETL-Pipeline
 cd ScikitLearn-ETL-Pipeline
 
 # 2. Install the required dependencies:
