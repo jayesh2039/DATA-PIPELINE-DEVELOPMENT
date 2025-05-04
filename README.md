@@ -98,3 +98,8 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
+
+# Output:
+
+![Image](https://github.com/user-attachments/assets/09bb2678-6f36-4d53-9c24-bb04d2af665f)
+
